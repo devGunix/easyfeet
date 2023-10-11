@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyFeet</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/cover.jpg" alt="logotype" data-logoimg>
+            <ul>
+                <li class="userIcon"><a href="https://" data-login-modal><i class="gg-user"></i></a></li>
+                <li class="userIcon"><a href="https://"><i class="gg-shopping-bag"></i></a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <section data-modal>
+            <div data-modal-container>
+                <h1>Login</h1>
+                <form action="#" method="post">
+                    <label for="email">Email:</label><input type="email" id="email" required>
+                    <label for="password">Password:</label><input type="password" id="password" required>
+                    <button type="submit">Entrar</button>
+                </form>
+                <button type="menu" data-close-modal>X</button>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="home">
+            <section id="homeDesc">
+                <h1>Easy Feet</h1>
+                <article>
+                    Seu destino para os melhores tênis. Estilo, conforto e desempenho em cada passo. Bem-vindo à
+                    EasyFeet
+                </article>
+            </section>
+            <picture id="bannerIntro">
+                <img src="img/airmax.jpg" alt="">
+            </picture>
+        </section>
+        <section id="infosEnterprise">
+            <div>
+                <img src="img/delivery.png" alt="" class="infosEnterpriseIcon">
+                <p>Entregas rápidas e seguras no conforto da sua casa.</p>
+            </div>
+            <div>
+                <img src="img/dollar.png" alt="" class="infosEnterpriseIcon">
+                <p>Pagamentos seguros para tranquilidade nas compras.</p>
+            </div>
+            <div>
+                <img src="img/customer-service.png" alt="" class="infosEnterpriseIcon">
+                <p>Atendimento e suporte disponíveis 24 horas por dia, 7 dias por semana.</p>
+            </div>
+            <div>
+                <img src="img/credit-card.png" alt="" class="infosEnterpriseIcon">
+                <p>Protegemos seus dados com criptografia avançada para compras seguras.</p>
+            </div>
+        </section>
+        <section id="products">
+            <h1>Mais Vendidos</h1>
+            <section data-products-catalog>
+                <ul>
+                    <li class="productItem">
+                        <h2 class="titleProduct">Nike Renew Ride 3</h2>
+                        <img src="https://imgnike-a.akamaihd.net/360x360/025580ID.jpg" alt="" class="productImg">
+                        <span class="productDesc">R$ 130,00</span>
+                    </li>
+                    <li class="productItem">
+                        <h2 class="titleProduct">Tênis Seiquela</h2>
+                        <img src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/244cfb86b65142539b845cc0007e8cbc_9366/tenis-forum-bold.jpg"
+                            alt="" class="productImg">
+                    </li>
+                    <li class="productItem">
+                        <h2 class="titleProduct">Tênis Seiquela</h2>
+                        <img src="https://imgnike-a.akamaihd.net/360x360/027283ID.jpg" alt="" class="productImg">
+                    </li>
+                    <li class="productItem">
+                        <h2 class="titleProduct">Tênis Seiquela</h2>
+                        <img src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/38adaccc0b8644c88923c6397cbba6a8_9366/tenis-gazelle.jpg"
+                            alt="">
+                    </li>
+                </ul>
+            </section>
+        </section>
+    </main>
+
+    <script type="module" src="script/script.js"></script>
+</body>
+
+</html>

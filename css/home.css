@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+a {
+  text-decoration: none;
+}
+
+[data-logoimg] {
+  width: auto;
+  min-height: 90px;
+}
+
+header {
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  background: white;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+header nav ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 13pt;
+  transition: all 0.5 ease-in-out;
+  position: relative;
+}
+
+header nav a[href^="#"]:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  animation: animeLink 0.5s forwards;
+  position: absolute;
+}
+
+@keyframes animeLink {
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+  from {
+    transform: translate3d(0, -5px, 0);
+  }
+}
+
+#bannerIntro img {
+  border-radius: 15px;
+  position: absolute;
+  top: 30vh;
+  right: 10vh;
+  padding-bottom: 5px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home {
+  width: 100%;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#home #homeDesc {
+  height: auto;
+}
+
+#homeDesc h1 {
+  font-size: 40pt;
+  font-weight: bolder;
+  font-family: Roboto;
+  text-shadow: 1px 2px 2px rgba(218, 0, 218, 0.421);
+}
+
+#homeDesc article {
+  width: 400px;
+  font-size: 16pt;
+}
+
+#homeDesc article::after {
+  content: "";
+  display: block;
+  width: 300px;
+  background: black;
+  height: 5px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.userIcon:nth-child(1) {
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.userIcon:nth-child(2) {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+}
+
+#infosEnterprise {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  max-width: 1400px;
+  padding-bottom: 50px;
+}
+
+#infosEnterprise div {
+  width: 15%;
+  display: flex;
+  justify-content: space;
+  align-items: center;
+  gap: 15px;
+  padding: 0 5px;
+}
+
+#infosEnterprise div:nth-child(2n + 1) {
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+#infosEnterprise div p {
+  width: 100%;
+  font-size: 11pt;
+}
+
+.infosEnterpriseIcon {
+  width: 40px;
+}
+
+#seila {
+  height: 80vh;
+}
