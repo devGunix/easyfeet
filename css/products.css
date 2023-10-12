@@ -2,12 +2,12 @@
   width: 100%;
   padding-top: 50px;
   height: auto;
-  min-height: 70vh;
   background: white;
 }
 
 #products h1 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 [data-products-catalog] {
@@ -16,12 +16,12 @@
 }
 
 [data-products-catalog] ul {
-  display: flex;
   width: auto;
+  height: auto;
+  display: flex;
   max-width: 1500px;
   justify-content: center;
   gap: 20px;
-  padding: 50px 0;
   margin: 0 auto;
   flex-wrap: wrap;
   list-style: none;
@@ -62,6 +62,8 @@
   color: black;
   font-weight: bold;
   border: 2px solid gray;
+  width: 305px;
+  text-align: center;
 }
 
 .titleProduct {

@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/shopping-bag.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/user.css' rel='stylesheet'>
@@ -13,19 +13,25 @@
 </head>
 
 <body>
-    <header>
+    <header id="up">
         <nav>
             <img src="img/cover.jpg" alt="logotype" data-logoimg>
             <ul>
-                <li class="userIcon"><a href="https://" data-login-modal><i class="gg-user"></i></a></li>
-                <li class="userIcon"><a href="https://"><i class="gg-shopping-bag"></i></a></li>
+                <li class="userIcon"><i class="gg-shopping-bag"></i></li>
                 <li class="userIcon"><img src="img/star.png" alt="" width="20px"></li>
+                <li class="userIcon" data-login-modal>
+                    <i class="gg-user"></i>
+                    <h4>Entrar</h4>
+                </li>
                 <li><a href="#home">Inicio</a></li>
                 <li><a href="#products">Produtos</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#aboutUs">Sobre Nós</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
+        <div class="alerts">
+            <h3 data-desc-alert></h3>
+        </div>
         <section data-modal>
             <div data-modal-container>
                 <h1>Login</h1>
@@ -39,6 +45,7 @@
         </section>
     </header>
     <main>
+
         <section id="home">
             <section id="homeDesc">
                 <h1>Easy Feet</h1>
@@ -77,41 +84,103 @@
                         <div class="titleProduct">
                             <img src="img/nike.png" alt="">
                         </div>
-                        <img src="img/star.png" alt="" class="favoriteIcon">
+                        <img src="img/star.png" alt="" class="favoriteIcon" data-product="1">
                         <img src="https://imgnike-a.akamaihd.net/360x360/025580ID.jpg" alt="" class="productImg">
-                        <span class="productDesc">Tênis Nike Renew Ride 3 Masculino - R$ 130,00</span>
+                        <span class="productDesc">Tênis Nike Primary Masculino</span>
                     </li>
                     <li class="productItem">
                         <div class="titleProduct">
-                            <img src="img/star.png" alt="" class="favoriteIcon">
+                            <img src="img/star.png" alt="" class="favoriteIcon" data-product="2">
                             <img src="img/nike.png" alt="">
                         </div>
                         <img src="https://imgnike-a.akamaihd.net/360x360/027283ID.jpg" alt="" class="productImg">
-                        <span class="productDesc">Tênis Nike Renew Ride 3 Masculino - R$ 130,00</span>
+                        <span class="productDesc">Tênis Nike Second Masculino</span>
                     </li>
                     <li class="productItem">
                         <div class="titleProduct">
-                            <img src="img/star.png" alt="" class="favoriteIcon">
+                            <img src="img/star.png" alt="" class="favoriteIcon" data-product="3">
                             <img src="img/adidas.png" alt="">
                         </div>
                         <img src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/244cfb86b65142539b845cc0007e8cbc_9366/tenis-forum-bold.jpg"
                             alt="" class="productImg">
-                        <span class="productDesc">Tênis Nike Renew Ride 3 Masculino - R$ 130,00</span>
+                        <span class="productDesc">Tênis Adidas Primary Masculino</span>
                     </li>
                     <li class="productItem">
                         <div class="titleProduct">
-                            <img src="img/star.png" alt="" class="favoriteIcon">
+                            <img src="img/star.png" alt="" class="favoriteIcon" data-product="4">
                             <img src="img/adidas.png" alt="">
                         </div>
                         <img src="https://assets.adidas.com/images/w_280,h_280,f_auto,q_auto:sensitive/38adaccc0b8644c88923c6397cbba6a8_9366/tenis-gazelle.jpg"
                             alt="">
-                        <span class="productDesc">Tênis Nike Renew Ride 3 Masculino - R$ 130,00</span>
+                        <span class="productDesc">Tênis Adidas Second Masculino</span>
                     </li>
                 </ul>
             </section>
         </section>
-    </main>
+        <section id="aboutUs">
+            <div class="aboutSubContainer">
+                <h1>Sobre Nós</h1>
+                <article>
+                    <p>
+                        Na EasyFeet, nossa paixão é fornecer calçados que combinem estilo, conforto e
+                        desempenho. Fundada por entusiastas de tênis, nossa missão é trazer o melhor do mundo dos
+                        calçados para os nossos clientes.
+                    </p>
+                    <br>
+                    <p>
+                        Há 14 anos, começamos essa jornada, comprometidos em oferecer uma seleção cuidadosamente
+                        curada dos tênis mais modernos e icônicos do mercado. Nosso compromisso com a satisfação do
+                        cliente é inabalável, refletindo em nossa entrega confiável, suporte 24 horas e garantia de
+                        pagamento segura.
+                    </p>
+                    <br>
+                    <p>
+                        Aqui na EasyFeet, acreditamos que cada passo importa, e estamos dedicados a ajudar
+                        você a dar esses passos com confiança, estilo e conforto. Junte-se a nós e comece a caminhar com
+                        a melhor seleção de tênis ao alcance dos seus pés.
+                    </p>
+                </article>
+            </div>
+            <div class="aboutSubContainer">
+                <h1>Perguntas Frequentes</h1>
+                <dl data-desc-list>
+                    <dt>Como faço para rastrear o meu pedido?</dt>
+                    <dd>Você pode facilmente rastrear seu pedido na seção "Rastreamento de Pedidos" do nosso site.
+                        Insira o número do pedido e seu endereço de e-mail para obter informações atualizadas sobre o
+                        status da entrega.</dd>
 
+                    <dt>Qual é a política de devolução?</dt>
+                    <dd>Oferecemos uma política de devolução flexível. Se não estiver satisfeito com sua compra, entre
+                        em contato conosco dentro de 30 dias e nós o guiaremos pelo processo de devolução e reembolso.
+                    </dd>
+
+                    <dt>Quais métodos de pagamento são aceitos?</dt>
+                    <dd>Aceitamos diversos métodos de pagamento, incluindo cartões de crédito, débito e PayPal. Você
+                        pode escolher a opção que for mais conveniente para você durante o checkout.</dd>
+
+                    <dt>Quanto tempo leva para a entrega?</dt>
+                    <dd>O tempo de entrega varia de acordo com a sua localização, mas normalmente é de 3 a 5 dias úteis.
+                        Oferecemos opções de entrega expressa para quem deseja receber seus tênis mais rapidamente.</dd>
+
+                    <dt>Os tênis vêm com garantia?</dt>
+                    <dd>Sim, todos os tênis em nossa loja vêm com garantia de qualidade. Se você encontrar algum
+                        problema de fabricação, entre em contato conosco e teremos prazer em resolver o problema.</dd>
+
+                    <dt>Vocês oferecem descontos para compras em grande quantidade?</dt>
+                    <dd>Sim, oferecemos descontos especiais para compras em grande quantidade. Entre em contato com
+                        nossa equipe de suporte para obter mais informações sobre como obter um orçamento personalizado
+                        para suas necessidades.</dd>
+                </dl>
+
+            </div>
+        </section>
+        <a href="#up" id="upButton"><button><img src="img/upArrow.png" alt=""></button></a>
+        <footer>
+            <div>
+                <p>&copy; Copyright 2023</p>
+            </div>
+        </footer>
+    </main>
     <script type="module" src="script/script.js"></script>
 </body>
 
