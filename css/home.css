@@ -68,6 +68,10 @@ header nav a[href^="#"]:hover::after {
   position: absolute;
 }
 
+[data-menu-mobile] {
+  display: none;
+}
+
 @keyframes animeLink {
   to {
     transform: translate3d(0, 0, 0);
@@ -75,14 +79,6 @@ header nav a[href^="#"]:hover::after {
   from {
     transform: translate3d(0, -5px, 0);
   }
-}
-
-#bannerIntro img {
-  border-radius: 15px;
-  position: absolute;
-  top: 23vh;
-  right: 10vh;
-  padding-bottom: 5px;
 }
 
 main {
@@ -97,11 +93,12 @@ main {
   display: flex;
   height: 70vh;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 #home #homeDesc {
   height: auto;
+  margin-left: 100px;
 }
 
 #homeDesc h1 {
@@ -126,7 +123,7 @@ main {
   border-radius: 10px;
 }
 
-.userIcon {
+.userIcon:nth-child(4) {
   position: absolute;
   cursor: pointer;
 }
@@ -183,6 +180,7 @@ main {
   position: fixed;
   bottom: 10px;
   right: 20px;
+  z-index: 1000;
 }
 
 #upButton button {

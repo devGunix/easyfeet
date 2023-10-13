@@ -10,17 +10,15 @@ accordionTitle.forEach((e) => {
 
 function accordionShow() {
   if (this.classList.contains("active")) {
-    descContainer.classList.remove("active");
     this.classList.remove("active");
     this.nextElementSibling.classList.remove("active");
   } else {
     accordionTitle.forEach((e) => {
       e.classList.remove("active");
-      descContainer.classList.remove("active");
       e.nextElementSibling.classList.remove("active");
     });
     this.nextElementSibling.classList.add("active");
     this.classList.add("active");
-    descContainer.classList.add("active");
+    
   }
 }

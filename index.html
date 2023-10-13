@@ -14,8 +14,21 @@
 
 <body>
     <header id="up">
-        <nav  data-anime-scroll>
+        <nav>
             <img src="img/cover.jpg" alt="logotype" data-logoimg>
+            <ul data-menu-mobile>
+                <h4>MENU</h4>
+                <div id="mobile">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#aboutUs">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li class="userIcon" data-login-modal>
+                        <a href="#">Login</a>
+                    </li>
+                    <li class="userIcon"><i class="gg-shopping-bag"></i></li>
+                </div>
+            </ul>
             <ul>
                 <li class="userIcon"><i class="gg-shopping-bag"></i></li>
                 <li class="userIcon"><img src="img/star.png" alt="" width="20px"></li>
@@ -28,6 +41,7 @@
                 <li><a href="#aboutUs">Sobre Nós</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
+
         </nav>
         <div class="alerts">
             <h3 data-desc-alert></h3>
@@ -171,7 +185,6 @@
                         nossa equipe de suporte para obter mais informações sobre como obter um orçamento personalizado
                         para suas necessidades.</dd>
                 </dl>
-
             </div>
         </section>
         <a href="#up" id="upButton"><button><img src="img/upArrow.png" alt=""></button></a>
@@ -181,7 +194,8 @@
             </div>
         </footer>
     </main>
-    <script type="module" src="script/script.js"></script>
+    <script type="module" src="script/script.js">
+    </script>
 </body>
 
 </html>

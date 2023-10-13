@@ -7,5 +7,18 @@ export default function responsiveInit() {
     productsContainer.style.height =
       productsHeight.getBoundingClientRect().height + 200 + "px";
   }
-  window.onload = resizeProducts();
+
+  const menuMobile = document.querySelector("[data-menu-mobile]");
+  const events = ["touch", "click"];
+  events.forEach((event) => {
+    menuMobile.addEventListener(event, menuMobileActive);
+  });
+
+  function menuMobileActive() {
+    menuMobile.classList.toggle("active")
+  }
+
+  window.onload = () => {
+    resizeProducts();
+  };
 }

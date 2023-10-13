@@ -14,7 +14,8 @@
 
 .aboutSubContainer {
   width: 700px;
-  height: 600px;
+  height: auto;
+  padding-bottom: 15px;
   background: #dddddd;
   position: relative;
   display: flex;
@@ -22,36 +23,22 @@
   flex-direction: column;
 }
 
-[data-desc-list].active{
-  animation: heightSmooth 0.5s forwards;
-}
-
-@keyframes heightSmooth {
-  from {
-    height: 300px;
-  }
-  to {
-    height: 600px;
-  }
-}
-
 .aboutSubContainer:nth-child(2) {
   background: none;
   height: auto;
   border: 2px solid rgba(128, 128, 128, 0.144);
   border-radius: 0;
-  animation: heightSmooth 0.5s forwards;
 }
 
 .aboutSubContainer dl {
   display: flex;
   flex-direction: column;
   gap: 33px;
-  padding: 10px 0;
   width: 80%;
   margin-top: 40px;
   align-self: center;
   margin: auto 0;
+  padding: 20px 0;
 }
 
 .aboutSubContainer dt {

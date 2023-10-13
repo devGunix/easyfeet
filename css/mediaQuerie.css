@@ -1,0 +1,107 @@
+@media (max-width: 1300px) {
+  #bannerIntro img {
+    width: 600px;
+    max-width: 100%;
+  }
+
+  #infosEnterprise {
+    width: 100%;
+  }
+
+  .aboutSubContainer {
+    width: 450px;
+  }
+
+  header nav {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1100px) {
+  header nav ul:not([data-menu-mobile]) {
+    display: none;
+  }
+
+  [data-menu-mobile] {
+    display: flex;
+    font-size: 15pt;
+    flex-direction: column;
+    position: relative;
+    z-index: 5000;
+  }
+
+  [data-menu-mobile] h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  [data-menu-mobile] h4::before {
+    content: "";
+    display: inline-block;
+    background: black;
+    width: 15px;
+    height: 2px;
+    box-shadow: 0 4px black, 0 -4px black;
+  }
+
+  [data-menu-mobile].active > #mobile {
+    display: flex;
+  }
+
+  #mobile {
+    width: 100px;
+    height: auto;
+    display: none;
+    padding: 5px 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 0 0 15px 15px;
+    border: 2px solid black;
+    position: absolute;
+    top: 80px;
+    left: -8px;
+    border-top: none;
+    z-index: 3000;
+    gap: 8px;
+  }
+
+  #mobile li a {
+    color: black;
+    padding: 5px;
+  }
+
+  #aboutUs {
+    gap: 50px;
+  }
+
+  [data-logoimg] {
+    display: none;
+  }
+
+
+  #bannerIntro{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutSubContainer {
+    width: 90%;
+  }
+  .aboutSubContainer article {
+    font-size: 12pt;
+  }
+
+  .aboutSubContainer dt {
+    font-size: 12pt;
+  }
+
+  #home #homeDesc{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 90%;
+  }
+}
