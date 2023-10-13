@@ -50,6 +50,7 @@
   }
 
   #mobile {
+    min-width: 100px;
     width: 100px;
     height: auto;
     display: none;
@@ -59,11 +60,9 @@
     align-items: center;
     background: white;
     border-radius: 0 0 15px 15px;
-    border: 2px solid black;
     position: absolute;
     top: 80px;
     left: -8px;
-    border-top: none;
     z-index: 3000;
     gap: 8px;
   }
@@ -81,9 +80,16 @@
     display: none;
   }
 
-
-  #bannerIntro{
+  #bannerIntro {
     display: none;
+  }
+
+  #infosEnterprise div {
+    flex-wrap: wrap;
+  }
+
+  #infosEnterprise div img {
+    margin: 0 auto;
   }
 }
 
@@ -99,9 +105,24 @@
     font-size: 12pt;
   }
 
-  #home #homeDesc{
+  #home #homeDesc {
     margin: 0 auto;
     width: 90%;
     max-width: 90%;
+  }
+
+  #home #homeDesc article,
+  #home #homeDesc article::after {
+    max-width: 100%;
+  }
+
+  #infosEnterprise {
+    flex-direction: column;
+  }
+
+  #infosEnterprise div {
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px 5px;
   }
 }
